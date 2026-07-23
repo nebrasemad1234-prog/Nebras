@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo', sans-serif;scroll-behavior:smooth}
+
+body{background:url('../Picture/Img1.jpg') no-repeat center center fixed;background-size:cover;color:#fff}
+
+/* الهيدر الفخم */
+header{background:rgba(0,0,0,0.85);backdrop-filter:blur(10px);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:20px 50px;position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.5)}
+header h2{color:#ff9d00;font-size:28px;font-weight:700}
+header ul{list-style:none;display:flex;gap:25px}
+header ul li a{color:#fff;text-decoration:none;font-size:17px;font-weight:600;transition:0.3s;padding-bottom:5px}
+header ul li a:hover, header ul li a.active{color:#ff9d00;border-bottom:2px solid #ff9d00}
+
+/* صفحة الرئيسية */
+.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6))}
+.hero h1{font-size:55px;color:#ff9d00;margin-bottom:15px;text-shadow:2px 2px 10px #000}
+.hero p{font-size:22px;margin-bottom:30px}
+.btn{background:linear-gradient(90deg, #ff9d00, #ff6600);color:#fff;padding:15px 35px;border-radius:50px;text-decoration:none;font-size:20px;font-weight:700;transition:0.3s;box-shadow:0 5px 15px rgba(255,157,0,0.4)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(255,157,0,0.6)}
+
+/* المنيو */
+.menu{padding:60px 40px;background:rgba(0,0,0,0.85)}
+.menu h1{text-align:center;color:#ff9d00;font-size:45px;margin-bottom:50px}
+.items{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.item{background:#1a1a1a;border-radius:20px;overflow:hidden;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,0.5);transition:0.4s;border:2px solid transparent}
+.item:hover{transform:translateY(-10px);border-color:#ff9d00}
+.item img{width:100%;height:220px;object-fit:cover}
+.item h3{margin:15px 0;font-size:22px;color:#fff}
+.item span{color:#ff9d00;font-weight:700;font-size:20px;display:block;margin-bottom:15px}
+
+/* الصفحات العادية */
+.info{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:rgba(0,0,0,0.8);padding:40px}
+.info h1{color:#ff9d00;font-size:40px;margin-bottom:20px}
+.info p{font-size:20px;max-width:600px;line-height:1.8}
+
+/* صفحة الحجز */
+.booking{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:rgba(0,0,0,0.85);padding:60px 20px}
+.booking h1{color:#ff9d00;font-size:40px;margin-bottom:30px}
+.booking form{background:#1a1a1a;padding:40px;border-radius:20px;width:100%;max-width:450px;display:flex;flex-direction:column;gap:18px;box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+.booking input, .booking textarea{padding:14px;border:2px solid #333;background:#222;color:#fff;border-radius:10px;font-size:16px;outline:none;transition:0.3s}
+.booking input:focus, .booking textarea:focus{border-color:#ff9d00}
+.booking button{background:linear-gradient(90deg, #ff9d00, #ff6600);color:#fff;padding:15px;border:none;border-radius:10px;font-size:19px;font-weight:700;cursor:pointer;transition:0.3s}
+.booking button:hover{transform:scale(1.03)}
